@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf23d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf23d.dir/build.make CMakeFiles/cmTC_cf23d.dir/build
+make[1]: Entering directory '/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf23d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cf23d.dir/CheckSymbolExists.c.o   -c "/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_cf23d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf23d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cf23d.dir/CheckSymbolExists.c.o  -o cmTC_cf23d 
+CMakeFiles/cmTC_cf23d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cf23d.dir/build.make:97: recipe for target 'cmTC_cf23d' failed
+make[1]: *** [cmTC_cf23d] Error 1
+make[1]: Leaving directory '/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cf23d/fast' failed
+make: *** [cmTC_cf23d/fast] Error 2
+
+File /media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_784fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_784fe.dir/build.make CMakeFiles/cmTC_784fe.dir/build
+make[1]: Entering directory '/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_784fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_784fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_784fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_784fe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_784fe.dir/CheckFunctionExists.c.o  -o cmTC_784fe -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_784fe.dir/build.make:97: recipe for target 'cmTC_784fe' failed
+make[1]: *** [cmTC_784fe] Error 1
+make[1]: Leaving directory '/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_784fe/fast' failed
+make: *** [cmTC_784fe/fast] Error 2
+
+

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/main.dir/src/hellomake.c.o CMakeFiles/main.dir/src/hellofunc.c.o  -o main 
