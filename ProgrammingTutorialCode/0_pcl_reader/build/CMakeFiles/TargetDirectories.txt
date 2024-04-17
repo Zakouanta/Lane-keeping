@@ -1,3 +1,0 @@
-/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/rebuild_cache.dir
-/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/pcl_reader.dir
-/media/thrun/nacho/Corso AD/AD_course_2020_code/0_Renderer/0_pcl_reader/build/CMakeFiles/edit_cache.dir
